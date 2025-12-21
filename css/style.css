@@ -1,0 +1,129 @@
+body { margin:0; font-family: Arial; }
+.navbar {
+    background: #2e7d32;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo { color: white; font-weight: bold; }
+.nav-links { list-style: none; display: flex; }
+.nav-links li { margin-left: 15px; }
+.nav-links a { color: white; text-decoration: none; }
+
+.hero {
+    height: 80vh;
+    background: green;
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.page { padding: 40px; }
+
+
+.em-home-hero{
+    background-image: url(../img/ecomarket.png);
+    background-size: cover;
+    background-position: center;
+}
+/* =====================
+   GLOBAL
+===================== */
+body#EM-body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* =====================
+   HERO
+===================== */
+.EM-hero {
+    min-height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url("../img/hero.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.EM-hero h1 {
+    font-size: 3rem;
+}
+
+.EM-hero p {
+    font-size: 1.2rem;
+}
+
+/* =====================
+   SECTIONS
+===================== */
+.EM-section {
+    padding: 60px 20px;
+}
+
+/* =====================
+   IMAGES
+===================== */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* =====================
+   FORMS
+===================== */
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* =====================
+   TABLE
+===================== */
+table {
+    width: 100%;
+}
+
+/* =====================
+   MEDIA QUERIES
+===================== */
+
+/* 📱 MOBILE */
+@media (max-width: 576px) {
+    .EM-hero h1 {
+        font-size: 2rem;
+    }
+
+    .EM-hero p {
+        font-size: 1rem;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+
+/* 📱 TABLET */
+@media (min-width: 577px) and (max-width: 992px) {
+    .EM-hero h1 {
+        font-size: 2.5rem;
+    }
+}
+footer h5 {
+    font-weight: 600;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
